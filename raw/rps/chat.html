@@ -1,0 +1,105 @@
+<div class="flex h-full max-w-full flex-1 flex-col"><main class="relative h-full w-full transition-width flex flex-col overflow-auto items-stretch flex-1"><div class="absolute right-4 top-2 z-10 hidden flex-col gap-2 md:flex"></div><div class="flex-1 overflow-hidden"><div class="react-scroll-to-bottom--css-bcqcb-79elbk h-full dark:bg-gray-800"><div class="react-scroll-to-bottom--css-bcqcb-1n7m0yu"><div class="flex flex-col text-sm dark:bg-gray-800"><div class="flex flex-wrap items-center justify-center gap-1 border-b border-black/10 bg-gray-50 p-3 text-gray-500 dark:border-gray-900/50 dark:bg-gray-700 dark:text-gray-300">Model: Default (GPT-3.5)</div><div class="group w-full text-gray-800 dark:text-gray-100 border-b border-black/10 dark:border-gray-900/50 dark:bg-gray-800"><div class="flex p-4 gap-4 text-base md:gap-6 md:max-w-2xl lg:max-w-[38rem] xl:max-w-3xl md:py-6 lg:px-0 m-auto"><div class="flex-shrink-0 flex flex-col relative items-end"><div class="w-[30px]"><div class="relative flex"><span style="box-sizing: border-box; display: inline-block; overflow: hidden; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; max-width: 100%;"><span style="box-sizing: border-box; display: block; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; max-width: 100%;"></span></span></div></div></div><div class="relative flex w-[calc(100%-50px)] flex-col gap-1 md:gap-3 lg:w-[calc(100%-115px)]"><div class="flex flex-grow flex-col gap-3"><div class="min-h-[20px] flex items-start overflow-x-auto whitespace-pre-wrap break-words flex-col gap-4"><div class="empty:hidden">You are a creative web developer with many years of experience.  Create a modern but simple web game using only CSS for the graphics and javascript for the functionality.  Create the game and return all the working code.</div></div></div><div class="text-gray-400 flex self-end lg:self-center justify-center mt-2 gap-2 md:gap-3 lg:gap-1 lg:absolute lg:top-0 lg:translate-x-full lg:right-0 lg:mt-0 lg:pl-2 visible"></div><div class="flex justify-between lg:block"></div></div></div></div><div class="group w-full text-gray-800 dark:text-gray-100 border-b border-black/10 dark:border-gray-900/50 bg-gray-50 dark:bg-[#444654]"><div class="flex p-4 gap-4 text-base md:gap-6 md:max-w-2xl lg:max-w-[38rem] xl:max-w-3xl md:py-6 lg:px-0 m-auto"><div class="flex-shrink-0 flex flex-col relative items-end"><div class="w-[30px]"><div class="relative p-1 rounded-sm h-[30px] w-[30px] text-white flex items-center justify-center" style="background-color: rgb(25, 195, 125);"></div></div></div><div class="relative flex w-[calc(100%-50px)] flex-col gap-1 md:gap-3 lg:w-[calc(100%-115px)]"><div class="flex flex-grow flex-col gap-3"><div class="min-h-[20px] flex items-start overflow-x-auto whitespace-pre-wrap break-words flex-col gap-4"><div class="markdown prose w-full break-words dark:prose-invert dark"><p>Certainly! I can help you create a simple web game using CSS for graphics and JavaScript for functionality. Let's create a classic game of "Rock, Paper, Scissors" with a modern twist. Here's the code:</p><pre><div class="bg-black rounded-md mb-4"><div class="p-4 overflow-y-auto"><code class="!whitespace-pre hljs language-html"><span class="hljs-meta">&lt;!DOCTYPE <span class="hljs-keyword">html</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">html</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>Rock Paper Scissors<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">style</span>&gt;</span><span class="css">
+    <span class="hljs-selector-tag">body</span> {
+      <span class="hljs-attribute">font-family</span>: Arial, sans-serif;
+      <span class="hljs-attribute">text-align</span>: center;
+      <span class="hljs-attribute">margin</span>: <span class="hljs-number">0</span>;
+      <span class="hljs-attribute">padding</span>: <span class="hljs-number">0</span>;
+    }
+
+    <span class="hljs-selector-tag">h1</span> {
+      <span class="hljs-attribute">margin-top</span>: <span class="hljs-number">50px</span>;
+    }
+
+    <span class="hljs-selector-class">.choices</span> {
+      <span class="hljs-attribute">display</span>: flex;
+      <span class="hljs-attribute">justify-content</span>: center;
+      <span class="hljs-attribute">margin-top</span>: <span class="hljs-number">50px</span>;
+    }
+
+    <span class="hljs-selector-class">.choice</span> {
+      <span class="hljs-attribute">padding</span>: <span class="hljs-number">10px</span>;
+      <span class="hljs-attribute">margin</span>: <span class="hljs-number">10px</span>;
+      <span class="hljs-attribute">background-color</span>: <span class="hljs-number">#eee</span>;
+      <span class="hljs-attribute">border-radius</span>: <span class="hljs-number">5px</span>;
+      <span class="hljs-attribute">cursor</span>: pointer;
+    }
+
+    <span class="hljs-selector-class">.choice</span><span class="hljs-selector-pseudo">:hover</span> {
+      <span class="hljs-attribute">background-color</span>: <span class="hljs-number">#ddd</span>;
+    }
+
+    <span class="hljs-selector-id">#result</span> {
+      <span class="hljs-attribute">margin-top</span>: <span class="hljs-number">30px</span>;
+      <span class="hljs-attribute">font-weight</span>: bold;
+    }
+  </span><span class="hljs-tag">&lt;/<span class="hljs-name">style</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>Rock Paper Scissors<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"choices"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"choice"</span> <span class="hljs-attr">onclick</span>=<span class="hljs-string">"playGame('rock')"</span>&gt;</span>Rock<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"choice"</span> <span class="hljs-attr">onclick</span>=<span class="hljs-string">"playGame('paper')"</span>&gt;</span>Paper<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"choice"</span> <span class="hljs-attr">onclick</span>=<span class="hljs-string">"playGame('scissors')"</span>&gt;</span>Scissors<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"result"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+  <span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="javascript">
+    <span class="hljs-keyword">function</span> <span class="hljs-title function_">playGame</span>(<span class="hljs-params">userChoice</span>) {
+      <span class="hljs-keyword">var</span> choices = [<span class="hljs-string">'rock'</span>, <span class="hljs-string">'paper'</span>, <span class="hljs-string">'scissors'</span>];
+      <span class="hljs-keyword">var</span> randomIndex = <span class="hljs-title class_">Math</span>.<span class="hljs-title function_">floor</span>(<span class="hljs-title class_">Math</span>.<span class="hljs-title function_">random</span>() * <span class="hljs-number">3</span>);
+      <span class="hljs-keyword">var</span> computerChoice = choices[randomIndex];
+
+      <span class="hljs-keyword">var</span> result = <span class="hljs-title function_">getResult</span>(userChoice, computerChoice);
+
+      <span class="hljs-variable language_">document</span>.<span class="hljs-title function_">getElementById</span>(<span class="hljs-string">'result'</span>).<span class="hljs-property">innerText</span> = <span class="hljs-string">`You chose <span class="hljs-subst">${userChoice}</span>. Computer chose <span class="hljs-subst">${computerChoice}</span>. <span class="hljs-subst">${result}</span>`</span>;
+    }
+
+    <span class="hljs-keyword">function</span> <span class="hljs-title function_">getResult</span>(<span class="hljs-params">userChoice, computerChoice</span>) {
+      <span class="hljs-keyword">if</span> (userChoice === computerChoice) {
+        <span class="hljs-keyword">return</span> <span class="hljs-string">"It's a tie!"</span>;
+      } <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (
+        (userChoice === <span class="hljs-string">'rock'</span> &amp;&amp; computerChoice === <span class="hljs-string">'scissors'</span>) ||
+        (userChoice === <span class="hljs-string">'paper'</span> &amp;&amp; computerChoice === <span class="hljs-string">'rock'</span>) ||
+        (userChoice === <span class="hljs-string">'scissors'</span> &amp;&amp; computerChoice === <span class="hljs-string">'paper'</span>)
+      ) {
+        <span class="hljs-keyword">return</span> <span class="hljs-string">'You win!'</span>;
+      } <span class="hljs-keyword">else</span> {
+        <span class="hljs-keyword">return</span> <span class="hljs-string">'You lose!'</span>;
+      }
+    }
+  </span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span>
+</code></div></div></pre><p>To run this game, you can copy and paste the above code into a new HTML file and open it in a web browser. The game will display the options "Rock," "Paper," and "Scissors." When you click on one of the choices, the game will randomly select a computer choice and determine the winner. The result will be displayed below the choices.</p><p>Feel free to customize the CSS styles to match your preferences or add additional features to the game. Enjoy playing!</p></div></div></div><div class="flex justify-between lg:block"><div class="text-gray-400 flex self-end lg:self-center justify-center mt-2 gap-2 md:gap-3 lg:gap-1 lg:absolute lg:top-0 lg:translate-x-full lg:right-0 lg:mt-0 lg:pl-2 visible"><div class="flex gap-1"></div></div></div></div></div></div><div class="group w-full text-gray-800 dark:text-gray-100 border-b border-black/10 dark:border-gray-900/50 dark:bg-gray-800"><div class="flex p-4 gap-4 text-base md:gap-6 md:max-w-2xl lg:max-w-[38rem] xl:max-w-3xl md:py-6 lg:px-0 m-auto"><div class="flex-shrink-0 flex flex-col relative items-end"><div class="w-[30px]"><div class="relative flex"><span style="box-sizing: border-box; display: inline-block; overflow: hidden; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; max-width: 100%;"><span style="box-sizing: border-box; display: block; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; max-width: 100%;"></span></span></div></div></div><div class="relative flex w-[calc(100%-50px)] flex-col gap-1 md:gap-3 lg:w-[calc(100%-115px)]"><div class="flex flex-grow flex-col gap-3"><div class="min-h-[20px] flex items-start overflow-x-auto whitespace-pre-wrap break-words flex-col gap-4"><div class="empty:hidden">thanks</div></div></div><div class="text-gray-400 flex self-end lg:self-center justify-center mt-2 gap-2 md:gap-3 lg:gap-1 lg:absolute lg:top-0 lg:translate-x-full lg:right-0 lg:mt-0 lg:pl-2 visible"></div><div class="flex justify-between lg:block"></div></div></div></div><div class="group w-full text-gray-800 dark:text-gray-100 border-b border-black/10 dark:border-gray-900/50 bg-gray-50 dark:bg-[#444654]"><div class="flex p-4 gap-4 text-base md:gap-6 md:max-w-2xl lg:max-w-[38rem] xl:max-w-3xl md:py-6 lg:px-0 m-auto"><div class="flex-shrink-0 flex flex-col relative items-end"><div class="w-[30px]"><div class="relative p-1 rounded-sm h-[30px] w-[30px] text-white flex items-center justify-center" style="background-color: rgb(25, 195, 125);"></div></div></div><div class="relative flex w-[calc(100%-50px)] flex-col gap-1 md:gap-3 lg:w-[calc(100%-115px)]"><div class="flex flex-grow flex-col gap-3"><div class="min-h-[20px] flex items-start overflow-x-auto whitespace-pre-wrap break-words flex-col gap-4"><div class="markdown prose w-full break-words dark:prose-invert dark"><p>You're welcome! If you have any more questions or need further assistance, feel free to ask. Have fun with your web game!</p></div></div></div><div class="flex justify-between lg:block"><div class="text-gray-400 flex self-end lg:self-center justify-center mt-2 gap-2 md:gap-3 lg:gap-1 lg:absolute lg:top-0 lg:translate-x-full lg:right-0 lg:mt-0 lg:pl-2 visible"><div class="flex gap-1"></div></div></div></div></div></div><div class="h-32 md:h-48 flex-shrink-0"></div></div></div></div></div></main></div><style>
+      .bg-black {
+        background-color: black;
+        color: white;
+        padding: 10px;
+        border-radius: 8px;
+      }
+      
+      .text-gray-500 {
+        background-color: lightgreen;
+        border-radius: 15px;
+        padding: 15px;
+        margin-bottom: 10px;
+      }
+      
+      .empty\:hidden {
+        background-color: lightblue;
+        color: black;
+        padding: 7px;
+        border-radius: 5px;
+      }
+      
+      .prose p {
+        background-color: lightgrey;
+        color: black;
+        padding: 7px;
+        border-radius: 5px;
+      }
+        </style><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/ir-black.min.css"><script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
