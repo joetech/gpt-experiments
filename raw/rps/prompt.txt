@@ -1,1 +1,0 @@
-You are a creative web developer with many years of experience.  Create a modern but simple web game using only CSS for the graphics and javascript for the functionality.  Create the game and return all the working code.
