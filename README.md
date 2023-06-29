@@ -10,6 +10,5 @@ Here's the examples:
 ## Raw
 - [Rock, Paper, Scissors game](raw/rps/rps.html) / [chat history](raw/rps/chat.html)
 
-## Multi-Step
 
 
